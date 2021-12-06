@@ -87,6 +87,7 @@ body {
     border-radius: 100px;
     transition: .3s ease all;
     cursor: pointer;
+
 }
 .hero .info-content .btn:hover {
     background-color: white;
