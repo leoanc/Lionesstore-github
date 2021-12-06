@@ -77,12 +77,16 @@ body {
     margin-bottom: 20px;
 }
 .hero .info-content .btn {
+    font-size: 20px;
+    border: none;
     display: inline-block;
     text-decoration: none;
     background-color: rgba(255, 114, 210, 1);
     color: white;
     padding: 15px 20px;
     border-radius: 100px;
+    transition: .3s ease all;
+    cursor: pointer;
 }
 .hero .info-content .btn:hover {
     background-color: white;
