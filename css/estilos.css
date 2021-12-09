@@ -14,6 +14,7 @@ body {
 .fas {
     font-size: 1.2em;
 }
+/*
 .navbar {
     background-color: white;
     display: grid;
@@ -48,12 +49,13 @@ body {
     grid-column: 8 / 9;
     justify-content: flex-end;
 }
+*/
 .hero {
     height: 83vh;
     background-image: url(../assets/background.jpg);
     background-size: cover;
     max-width: 100%;
-    height: 829px;
+    height: 833px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -111,15 +113,16 @@ body {
     background-color: #181818;
     color:white;
     padding: 26px;
+
 }
 .radio-section .listen-online .fas {
     margin-right: 15px;
     font-size: 1.5em;
 }
-.radio-section h2 {
+.radio-section h1 {
     grid-template-areas: follow-me;
     text-align: center;
-    margin-right: 250px;
+    margin-right: 780px;
 }
 .radio-section .social-network {
     grid-template-areas: social-network;
@@ -131,7 +134,7 @@ body {
     justify-content: flex-end;
 }
 
-
+/*
 @media only screen and (max-width: 600px)  {
 
     .navbar {
@@ -181,7 +184,7 @@ body {
     background-color: white;
     margin-top: 34em;
   } 
-
+*/
    .navbar .shop {
      display: none;
    }
