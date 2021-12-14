@@ -285,9 +285,8 @@ body {
 
 .containerA{
     background-color: rgba(45, 49, 42, 0.12);
-    padding: 40px;
-    text-align: center;
-    padding-bottom: 180px; 
+    padding: 20px;
+    text-align: center; 
 }
 
 .tituloA{

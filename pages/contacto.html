@@ -8,25 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--css-->
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/312efec1da.js" crossorigin="anonymous"></script>
     <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <!--barra de navegacion-->
-        <nav class="nav">
-            <div class="navLogo">
-                <a href="" class="navLogoTxt">LIONESS</a>
+    <header class="navbar-light bg-light">
+        <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">LIONESS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="productos.html">Productos</a>
+                  <a class="nav-link" href="acercade.html">Acerca de</a>
+                  <a class="nav-link" href="ayuda.html">Ayuda</a>
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </div>
+              </div>
             </div>
-                <ul>
-                    <a href="../index.html" class="navSeccion">Inicio</a>
-                    <a href="../pages/productos.html" class="navSeccion">Productos</a>
-                    <a href="../pages/acercade.html" class="navSeccion">Acerca de</a>
-                    <a href="../pages/ayuda.html" class="navSeccion">Ayuda</a>
-                    <a href="../pages/contacto.html" class="navSeccion">Contacto</a>                    
-                </ul>
-        </nav>
+          </nav>
+        </div>
     </header>
     <section>
 <div class="contenedorC">
@@ -54,20 +63,20 @@
 </div>   
     </section>
     <!--Pie de pagina-->
-    <footer class="AllFooter">
-        <div>
-            <div class="columna1">
-                <label>©2021 Lioness Store. All rights reserved</label>
-            </div>
-            <div class="columna2">
-                <label><a href="#" class="logoFooter">LIONESS</a></label>
-            </div>
-            <div class="columna3">
-                <label class="Contact">Contactanos</label>
-                <i class="fab fa-whatsapp-square"></i>
-                <i class="fab fa-instagram-square"></i>
-            </div>
+    <div class="radio-section">
+        <div class="listen-online">
+            <h3 class="fs-5">©2021 Lioness Store. All rights reserved</h3>
+        </div> 
+            <h1 class="fs-5">LIONESS</h1>
+        <div class="social-network">
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
         </div>
-    </footer>    
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
