@@ -34,25 +34,24 @@ body {
                 font-size: $fsizep;
                 margin-bottom: 20px;
             }
+        }
+    }
+
+    .btn {
+        font-size: 20px;
+        border: none;
+        display: inline-block;
+        text-decoration: none;
+        background-color: $colorbtn;
+        color: white;
+        padding: 15px 20px;
+        border-radius: 100px;
+        transition: .3s ease all;
+        cursor: pointer;
     
-            .btn {
-                font-size: 20px;
-                border: none;
-                display: inline-block;
-                text-decoration: none;
-                background-color: $colorbtn;
-                color: white;
-                padding: 15px 20px;
-                border-radius: 100px;
-                transition: .3s ease all;
-                cursor: pointer;
-            
-                &:hover {
-                    background-color: white;
-                    color:rgba(255, 114, 210, 1);
-                }
-            }
-    
+        &:hover {
+            background-color: white;
+            color:rgba(255, 114, 210, 1);
         }
     }
 

@@ -31,7 +31,7 @@ body .hero .info-content p {
   font-size: 25px;
   margin-bottom: 20px;
 }
-body .hero .info-content .btn {
+body .btn, body .contenedorC .limpiar, .contenedorC body .limpiar, body .contenedorC .enviar, .contenedorC body .enviar {
   font-size: 20px;
   border: none;
   display: inline-block;
@@ -43,7 +43,7 @@ body .hero .info-content .btn {
   transition: 0.3s ease all;
   cursor: pointer;
 }
-body .hero .info-content .btn:hover {
+body .btn:hover, body .contenedorC .limpiar:hover, .contenedorC body .limpiar:hover, body .contenedorC .enviar:hover, .contenedorC body .enviar:hover {
   background-color: white;
   color: #ff72d2;
 }
@@ -101,19 +101,21 @@ body .radio-section .social-network .fab {
   transition: 0.3s ease all;
   background-color: white;
 }
-
 #galeria img:hover {
   border: 5px solid #f7f7f7;
 }
 
-.tituloN {
+.containerN {
+  background-color: rgba(45, 49, 42, 0.12);
+  padding-bottom: 70px;
+}
+.containerN .tituloN {
   text-align: center;
   font-size: 50px;
   padding-bottom: 30px;
   padding-top: 40px;
 }
-
-.parrafoN {
+.containerN .parrafoN {
   height: 120px;
   margin: auto;
   text-align: center;
@@ -121,15 +123,9 @@ body .radio-section .social-network .fab {
   padding-bottom: 100px;
   margin-bottom: 60px;
 }
-
-.videoN {
+.containerN .videoN {
   display: inline;
   margin-left: 680px;
-}
-
-.containerN {
-  background-color: rgba(45, 49, 42, 0.12);
-  padding-bottom: 70px;
 }
 
 .containerA {
@@ -137,38 +133,61 @@ body .radio-section .social-network .fab {
   padding: 20px;
   text-align: center;
 }
-
-.tituloA {
+.containerA .tituloA {
   font-size: 30px;
 }
-
-.subtituloA {
+.containerA .subtituloA {
   padding: 60px;
   font-size: 30px;
 }
-
-.parrafoA {
+.containerA .parrafoA {
   margin-left: 100px;
   margin-right: 100px;
 }
 
 .contenedorC {
+  margin: auto;
+  width: 600px;
   background-color: rgba(45, 49, 42, 0.12);
   text-align: center;
   padding: 25px;
   font-size: 25px;
+  border-radius: 16px;
 }
-
-.tituloC {
+.contenedorC .tituloC h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.contenedorC .tituloC {
   font-size: 30px;
 }
-
-.formC {
+.contenedorC .formC {
   margin-top: 20px;
 }
-
-.formElements {
+.contenedorC .formElements {
   padding: 15px;
+}
+.contenedorC .formsize {
+  resize: none;
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: "Raleway";
+  padding: 5px;
+  border-color: rgba(45, 49, 42, 0.5);
+}
+.contenedorC .nombre {
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: "Raleway";
+  padding: 5px;
+  border-color: rgba(45, 49, 42, 0.5);
+}
+.contenedorC .email {
+  border-radius: 16px;
+  font-size: 20px;
+  font-family: "Raleway";
+  padding: 5px;
+  border-color: rgba(45, 49, 42, 0.5);
 }
 
 /*# sourceMappingURL=estilos.css.map */

@@ -15,46 +15,45 @@
     margin: 0 !important;
     padding: 25px;
 }
-
 #galeria img{
-  width: 100%;
-  height: 400px;
-  justify-content: center;
-  transition: .3s ease all;
-  background-color: white;
-}
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    transition: .3s ease all;
+    background-color: white;
 
-#galeria img:hover {
-  border: 5px solid #f7f7f7;
-  
+    &:hover{
+        border: 5px solid #f7f7f7;
+    }
 }
 
 // estilos acerca de
 
-.tituloN {
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 30px;
-    padding-top: 40px;
-}
-
-.parrafoN{
-    height: 120px;
-    margin: auto;
-    text-align: center;
-    width: 600px;
-    padding-bottom: 100px;
-    margin-bottom: 60px;
-}
-
-.videoN{
-    display: inline;
-    margin-left: 680px; 
-}
-
 .containerN{
     background-color: rgba(45, 49, 42, 0.12);
     padding-bottom: 70px;
+
+    .tituloN {
+        text-align: center;
+        font-size: 50px;
+        padding-bottom: 30px;
+        padding-top: 40px;
+    }
+
+    .parrafoN{
+        height: 120px;
+        margin: auto;
+        text-align: center;
+        width: 600px;
+        padding-bottom: 100px;
+        margin-bottom: 60px;
+    }
+
+    .videoN{
+        display: inline;
+        margin-left: 680px; 
+    }
+    
 }
 
 // estilos ayuda
@@ -63,39 +62,99 @@
     background-color: rgba(45, 49, 42, 0.12);
     padding: 20px;
     text-align: center; 
+
+    .tituloA{
+        font-size: 30px;
+    }
+
+    .subtituloA{
+        padding: 60px;
+        font-size: 30px;
+    }
+
+    .parrafoA{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
 }
 
-.tituloA{
-    font-size: 30px;
-}
-
-.subtituloA{
-    padding: 60px;
-    font-size: 30px;
-}
-
-.parrafoA{
-    margin-left: 100px;
-    margin-right: 100px;
-}
 
 // estilos contacto
 
+    //maps
+
+    $estilos: (
+
+        color: rgba(45, 49, 42, 0.12),
+        centro: center,
+        margen: auto,
+        sizefuente: 25px,
+        
+        );
+
 .contenedorC{
-    background-color: rgba(45, 49, 42, 0.12) ;
-    text-align: center;
+    margin: map-get($map: $estilos, $key: margen );
+    width: 600px;
+    background-color: map-get($map: $estilos, $key: color ) ;
+    text-align: map-get($map: $estilos, $key: centro);
     padding: 25px;
-    font-size: 25px;
+    font-size: map-get($map: $estilos, $key: sizefuente);
+    border-radius: 16px;
+
+    .tituloC h1{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .tituloC{
+        font-size: 30px;
+    }
+
+    .formC{
+        margin-top: 20px;
+    }
+
+    .formElements{
+        padding: 15px;
+    }
+
+    @mixin bordes {
+        border-radius: 16px;
+        font-size: 20px;
+        font-family: 'Raleway';
+        padding: 5px;
+        border-color: rgba(45, 49, 42,0.5);
+    }
+
+    .formsize{
+        resize: none;
+        @include bordes;
+    }
+
+    .nombre{
+        @include bordes;
+    }
+
+    .email{
+        @include bordes;
+    }
+
+    .enviar {
+        @extend .btn;
+
+    }
+
+    .limpiar{
+        @extend .btn;
+    }
+
+
 }
 
-.tituloC{
-    font-size: 30px;
-}
 
-.formC{
-    margin-top: 20px;
-}
 
-.formElements{
-    padding: 15px;
-}
+
+
+
+
