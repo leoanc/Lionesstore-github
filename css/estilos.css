@@ -19,6 +19,13 @@ body .hero {
 @media only screen and (max-width: 1200px) {
   body .hero {
     background-image: linear-gradient(rgba(66, 67, 70, 0.4), rgba(66, 67, 70, 0.4)), url(../assets/fondomovil.jpg);
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .hero {
+    background-image: linear-gradient(rgba(66, 67, 70, 0.4), rgba(66, 67, 70, 0.4)), url(../assets/fondomovil600px.jpg);
+    background-size: cover;
   }
 }
 body .hero .info-content {
@@ -33,15 +40,35 @@ body .hero .info-content {
     grid-row: 4/5;
   }
 }
+@media only screen and (max-width: 1200px) {
+  body .hero .info-content {
+    grid-column: 3/9;
+    grid-row: 4/5;
+  }
+}
 body .hero .info-content h1 {
-  font-weight: 900;
-  font-size: 5em;
+  font-size: 70px;
   color: black;
+}
+@media only screen and (max-width: 600px) {
+  body .hero .info-content h1 {
+    font-size: 50px;
+  }
 }
 body .hero .info-content p {
   font-family: "Montserrat", sans-serif;
   font-size: 25px;
   margin-bottom: 20px;
+  line-height: 40px;
+  text-shadow: 5px 10px 15px #363636;
+  background-color: rgba(8, 8, 8, 0.2);
+  padding: 15px;
+}
+@media only screen and (max-width: 600px) {
+  body .hero .info-content p {
+    font-size: 20px;
+    line-height: 35px;
+  }
 }
 body .btn {
   font-size: 20px;
@@ -71,6 +98,13 @@ body .btn:hover {
   text-align: center;
   padding-bottom: 25px;
   color: white;
+}
+@media only screen and (max-width: 600px) {
+  .footer .social {
+    text-align: center;
+    padding-bottom: 2px;
+    color: white;
+  }
 }
 .footer .social a {
   font-size: 24px;
@@ -126,27 +160,83 @@ body .btn:hover {
   background-color: #f5f3f3;
 }
 
-.containerN {
-  background-color: rgba(45, 49, 42, 0.12);
-  padding-bottom: 70px;
+.texto {
+  font-weight: bold;
 }
-.containerN .tituloN {
-  text-align: center;
-  font-size: 50px;
-  padding-bottom: 30px;
-  padding-top: 40px;
+
+.nosotrosSection {
+  background: url(../assets/Cambiar-color-pelo.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fdfdfd;
+  overflow: hidden;
+  padding: 100px 0;
 }
-.containerN .parrafoN {
-  height: 120px;
-  margin: auto;
-  text-align: center;
-  width: 600px;
-  padding-bottom: 100px;
-  margin-bottom: 60px;
+@media screen and (max-width: 1000px) {
+  .nosotrosSection {
+    background-size: 100%;
+    padding: 100px 40px;
+  }
 }
-.containerN .videoN {
-  display: inline;
-  margin-left: 680px;
+@media screen and (max-width: 600px) {
+  .nosotrosSection {
+    padding: 0;
+  }
+}
+.nosotrosSection .innerContainer {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 150px;
+}
+@media screen and (max-width: 1200px) {
+  .nosotrosSection .innerContainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nosotrosSection .innerContainer {
+    padding: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nosotrosSection .innerContainer {
+    padding: 60px;
+  }
+}
+.nosotrosSection .innerContainer h1 {
+  margin-bottom: 30px;
+  font-size: 35px;
+  font-weight: 900;
+}
+.nosotrosSection .innerContainer .text {
+  font-size: 16px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.nosotrosSection .innerContainer .skills {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 13px;
+}
+.nosotrosSection .innerContainer .skills .logo {
+  width: 130px;
+}
+@media screen and (max-width: 600px) {
+  .nosotrosSection .innerContainer .skills .logo {
+    width: 100px;
+  }
+}
+.nosotrosSection .innerContainer .skills .logo2 {
+  width: 110px;
+}
+@media screen and (max-width: 600px) {
+  .nosotrosSection .innerContainer .skills .logo2 {
+    width: 95px;
+  }
 }
 
 .containerA {
@@ -158,12 +248,22 @@ body .btn:hover {
   font-size: 30px;
 }
 .containerA .subtituloA {
-  padding: 60px;
+  padding: 45px;
   font-size: 30px;
+}
+.containerA .subtituloA h2 {
+  font-weight: bold;
 }
 .containerA .parrafoA {
   margin-left: 100px;
   margin-right: 100px;
+}
+.containerA .parrafoA p {
+  font-size: 18px;
+}
+
+.form {
+  resize: none;
 }
 
 /*# sourceMappingURL=estilos.css.map */
